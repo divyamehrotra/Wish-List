@@ -5,21 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wishlist</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="navbar">
+      <!-- <h3 >Sign In</h3> -->
+      <a href="signin.html" class="signin-button">Sign In</a>
+      <button class="btn" id="dark">
+        <i class='bx bxs-moon' ></i>
+      </button>
+
+      <div class="theme">
+      </div>
+        
+  </div>
     <main class="main">
-        <div class="navbar">
-            <!-- <h3 >Sign In</h3> -->
-            <a href="signin.html" class="signin-button">Sign In</a>
-        </div>
-        <h1 class="heading-1">Your Wishlist</h1>
+  
+        <h1 class="heading-1">Your Wish Harbour</h1>
         <!-- Creating the input field to get user's wishlist and a button to add the wishlist -->
         <form class="todo-form">
           <input class="input" placeholder="Add your wishlist here..." />
           <button class="button btn-primary cursor">Add</button>
           <div class="todos-container">
-    
+              <button class="delete">
+                <i class='bx bx-comment-minus'></i>
+              </button>
           </div>
         </form>
         <!-- Creating container to show all the todos -->

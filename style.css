@@ -1,10 +1,18 @@
 @import url("https://uilight.netlify.app/main.css");
  /* styling from component library */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");/* for icons */
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Qwitcher+Grypen:wght@700&display=swap');
 :root {
   --text-color-primary: #dceaf9;
   --background-color: #425c92;
+  --hover-color:#2642b5e7;
+  --button-bg-color:#9a989848;
+}
+.dark-theme{
+  --text-color-primary: #dceaf9;
+  --background-color: #121212;
+  --hover-color:#a1a1a1e7;
+  --button-bg-color:#72717148;
 }
 
 body {
@@ -17,70 +25,79 @@ body {
   margin-left: 50vw;
   transform: translateX(-50%);
 }
-
+.navbar{
+  float: right;
+}
 /* Style the button link */
-a.signin-button {
+a.signin-button, .btn {
     /* display: inline-block; */
     padding: 12px 24px;
-    background-color:#9a989848;
-    color: #ffffff;
+    background-color:var(--button-bg-color);
+    color: var(--text-color-primary);
     text-decoration: none;
     /* border-radius: 4px; */
+    border-style: none;
     font-size: 16px;
     margin: 30px 30px;
     transition: background-color 0.3s ease;
-    
-  }
-  
+}
+a{
+    color: var(--text-color-primary);
+}
   /* Style the button link on hover */
-  a.signin-button:hover {
-    background-color: #060708;
-  }
-  
+a.signin-button:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color-primary);
+}
+  .btn:hover{
+    background-color: var(--hover-color);
+    color: var(--text-color-primary);
+}
 .heading-1 {
-  color: var(--text-color-primary);
-  text-align: center;
-  margin-bottom: 0.5rem;
-  margin-top: 20px;
+    color: var(--text-color-primary);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 20px;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 100px;
 }
-
+  
 .input {
-  border-radius: 4px;
-  font-size: 1.25rem;
-  padding: 0.5rem;
-  border: none;
-  width: 25vw;
-  margin-bottom: 0.5rem;
+    border-radius: 4px;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    border: none;
+    width: 25vw;
+    margin-bottom: 0.5rem;
 }
-
-
 .t-checkbox {
-  width: 1.25rem;
-  height: 1.25rem;
-  margin: 8px;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 8px;
 }
-
 .btn-primary {
-  background-color: #2c333b;
-  font-size: 1.25rem;
-  padding: 0.5rem 0.875rem;
+    background-color: var(--button-bg-color);
+    font-size: 1.25rem;
+    padding: 0.5rem 0.875rem;
+    border-style: none;
 }
-
+.btn-primary:hover{
+  background-color: var(--hover-color);
+}
 .todo {
-  margin-left: 40px;
-  color: var(--text-color-primary);
-  display: flex;
-  font-size: 1.5rem;
-  width: 38vw;
+    margin-left: 40px;
+    color: var(--text-color-primary);
+    display: flex;
+    font-size: 1.5rem;
+    width: 38vw;
 }
-
 .todos-container {
-  height: 70vh;
-  overflow-y: auto;
+    height: 70vh;
+    overflow-y: auto;
 }
-
+  
 .t-pointer {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .todos {

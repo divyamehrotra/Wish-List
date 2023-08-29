@@ -12,3 +12,7 @@ signinForm.addEventListener("submit", function(event) {
   console.log("Username:", username);
   console.log("Password:", password);
 });
+var dark = document.getElementById("dark");
+dark.onclick= function(){
+    document.body.classList.toggle("dark-theme");
+}
