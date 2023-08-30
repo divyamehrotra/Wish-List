@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignIn-account-Your-wish-harbour</title>
+  <link rel="stylesheet" href="Newsign.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <main class="cont">
+      <div class="wish">
+          <a href="./" class="back-button">Your Wish Harbour</a>
+          <button class="btn" id="dark">
+                <i class='bx bxs-moon'></i>
+          </button>
+      </div>
+    <div class="container" id="id01">
+      <h1>Sign In</h1>
+      <form id="signin-form">
+        <input type="text" id="name" required placeholder="Full-name">
+        <input type="text" id="username" required placeholder="youremail@email.com">
+        <input type="password" id="password" required placeholder="password">
+        <input type="password" id="password" required placeholder="Confirm password">
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <button type="submit">Create Account</button>
+        <button type="submit" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </form>
+    </div>
+  </main>
+  <script src="Newsign.js"></script>
+</body>
+</html>

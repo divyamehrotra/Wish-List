@@ -24,6 +24,7 @@ body {
   padding: 2rem 0;
   margin-left: 50vw;
   transform: translateX(-50%);
+  margin-top: 50px;
 }
 .navbar{
   float: right;

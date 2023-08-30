@@ -1,0 +1,121 @@
+:root {
+  --text-color-primary:  #131313;
+  --background-color: #425c92;
+  /* --bg-image:url("") */
+  --hover-color:#035fc1;
+  --button-bg-color:#9a989848;
+}
+.dark-theme {
+--text-color-primary:  #131313;
+--background-color: #121212;
+--hover-color:#a1a1a1e7;
+--button-bg-color:#d4d3d348;
+}
+.main{
+  text-align: center;
+  padding: 2rem 0;
+  margin-left: 50vw;
+  transform: translateX(-50%);
+}
+.cont{
+text-align: center;
+padding: 2rem 0;
+margin-left:550px ;
+transform: translateX(-50%);
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+.wish{
+margin-bottom: 20px;
+text-align: center;
+}
+a.back-button{
+padding: 12px 24px;
+  background-color:var(--button-bg-color);
+  color:var(--text-color-primary);
+  text-decoration: none;
+  /* border-radius: 4px; */
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+a.back-button:hover {
+background-color: var(--hover-color);
+}
+
+
+.container {
+  width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--text-color-primary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  /* margin-bottom: 6px; */
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  /* background-color:var(--button-bg-color); */
+  color:var(--text-color-primary);
+  border: none;
+  /* border-radius: 4px; */
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+.btn{
+  padding: 10px 20px;
+  color:var(--text-color-primary);
+  border: none;
+  /* border-radius: 4px; */
+  cursor: pointer;
+  margin: 5px;
+background-color:var(--button-bg-color);
+text-decoration: none;
+border-style: none;
+font-size: 16px;
+/* margin: 30px 10px; */
+height: 42px;
+transition: background-color 0.3s ease;
+}
+.btn:hover{
+background-color: var(--hover-color);
+color: var(--text-color-primary);
+}
+.signup:hover{
+background-color: var(--hover-color);
+color: var(--text-color-primary);
+}
+a{
+color: var(--text-color-primary);
+text-decoration: none;
+}
